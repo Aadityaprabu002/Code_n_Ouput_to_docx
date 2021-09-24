@@ -18,7 +18,7 @@ Step three <br/>
 store the codes in the files/codes folder in correct order like 1.cpp , 2.cpp , 3.cpp ..... n.cpp (any language but of same type or even txt but without the " . " period symbol) <br/>
 
 Step four  <br/>
-store the images in the files/images folder in correct order like 1.png , 2.png , 3.png (any image format but of same type) <br/>
+store the images in the files/images folder in correct order like 1.png , 2.png , 3.png (any image format but of same type but without the " . " period symbol) <br/>
 
 Step five <br/>
 now run the script automator.py <br/>
