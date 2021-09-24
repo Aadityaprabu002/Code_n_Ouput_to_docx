@@ -22,7 +22,6 @@ store the images in the files/images folder in correct order like 1.png , 2.png 
 
 Step five <br/>
 now run the script automator.py <br/>
-<br/>
 
 Step six <br/>
 check documents folder you will get the compiled word doc there <br/><br/>
