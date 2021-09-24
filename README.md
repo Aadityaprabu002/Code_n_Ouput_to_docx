@@ -28,7 +28,7 @@ now run the script automator.py <br/>
 
 
 
-If your code has run successfully then your output be like this.....<br/>
+If your code ran successfully then your output be like this.....<br/>
 
 Output:<br/>
 
