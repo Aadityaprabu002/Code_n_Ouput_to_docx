@@ -1,10 +1,13 @@
 import glob
 import docx
+import os
 from docx.shared import Inches
 
 codeFilePath = '../Files/Codes/'
 imageFilePath = '../Files/Images/'
 docpath = '../Documents/'
+if (not os.path.isdir(docpath)):
+    os.mkdir(docpath)
 
 docName = input('Enter a name for your document:')
 
