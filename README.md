@@ -24,7 +24,8 @@ Step five <br/>
 now run the script automator.py <br/>
 <br/><br/><br/><br/>
 
-
+Step six <br/>
+check documents folder you will get the compiled word doc there <br/><br/>
 
 
 
@@ -51,3 +52,4 @@ Enter a subheading:11 <br/>
 Enter a subheading:12 <br/>
 Enter a subheading:13 <br/>
 <br/><br/><br/>
+
