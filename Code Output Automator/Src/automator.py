@@ -41,7 +41,7 @@ for fileIdx in range(len(codeFiles)):
         temp.bold = True
     code.close()
     ipath = imageFilePath+"{0}.{1}".format(fileIdx+1, imgExt)
-    doc.add_picture(imageFiles[fileIdx], width=Inches(docWidth.inches-2))
+    doc.add_picture(ipath, width=Inches(docWidth.inches-2))
     doc.paragraphs[-1].alignment = docx.enum.text.WD_ALIGN_PARAGRAPH.CENTER
 
 doc.save(docpath+'{0}.docx'.format(docName))
