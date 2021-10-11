@@ -2,7 +2,7 @@
 
 You can use this to compile the code and output images into a word doc for assignment purposes <br/>
 Basic requirements: <br/> <br/> 
-    Python 3.7+ should be installed <br/>
+    Python 3.7 or 3.8 <br/>
     python-docx module should be installed <br/>
     =>To install python-docx module use this command on the terminal "pip install python-docx" <br/>
     
