@@ -5,6 +5,7 @@ Basic requirements: <br/> <br/>
     Python 3.7 or 3.8 <br/>
     python-docx module should be installed <br/>
     =>To install python-docx module use this command on the terminal "pip install python-docx" <br/>
+    ![](Automator/Images/1.PNG)
     
 How to use the script: <br/>
 
