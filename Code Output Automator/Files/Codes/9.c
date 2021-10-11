@@ -1,26 +1,26 @@
-#include <stdio.h>
-#include<math.h>
-int main()
-{
-    int i,n,c=0;
-    printf ("Enter a number n:");
-    scanf ("%d",&n);
-    if(n==2){
-        c =0;
+#include<stdio.h>
+#include<string.h>
+int main(){
+    int n=10;
+    char abb[10][10];
+    for(int i=0;i<10;i++){
+        char name[100];
+        fgets(name,sizeof(name),stdin);
+        name[strcspn(name,"\n")] = '\0';
+        char space[] = " ";
+        char* token = strtok(name,space);
+        int j=0;
+        while(token!=NULL){
+            abb[i][j++] = token[0];
+            token = strtok(NULL,space);
+        }  
+        abb[i][j]='\0'; 
+        printf("\n");
     }
-    else if(n%2==0){
-        c = 1;
+    printf("[ ");
+    for(int i=0;i<10;i++){
+        printf("%s, ",abb[i]);
     }
-    else{
-        for (i=3;i<=(int)sqrt(n);i+=2){
-            if(n%i==0){
-                c=1;
-                break;
-            }
-                    
-        }
-    }
-    if (c==0) printf ("The number is PRIME");
-    else printf ("The number is COMPOSITE");
+    printf("]");
     return 0;
-} 
+}

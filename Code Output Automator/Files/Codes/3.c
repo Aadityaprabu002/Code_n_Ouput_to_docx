@@ -1,29 +1,28 @@
-#include <stdio.h>
-#include<stdlib.h>
-#include<string.h>
-char* substring(const char* string,int start,int end)
-{
-    char *substr = (char*)malloc(sizeof(char) * end-start+1);
-    int len=0;
-    while(string[start]!='\0' && start<end ){
-        *(substr+len) = string[start];
-        start++;
-        len++;
+#include<stdio.h>
+int isPallindrome(char str[],size_t n){
+    int p = 0;
+    n--;
+    int flag = 0;
+    while(p<n){
+        if(str[p]!=str[n]){
+            flag = 1;
+        }
+        p--;
+        n--;
     }
-    *(substr+len)='\0';
-    return substr;
 }
-void centerPadding(const char* s,int fieldWidth){
+int main(){
+    char str[100];
+    printf("Enter a string:");
+    scanf("%s",str);
+    int n =sizeof(str);
+    if(isPallindrome(str,n)){
+        printf("Pallindrome");
+    }
+    else{
+        printf("Not a Pallindrome");
+    }
     
-    int padlen = (fieldWidth - strlen(s)) / 2;
-    printf("%*s%s%*s\n",padlen,"",s,padlen,"");
-
-}
-int main() {  
-    printf("%15s\n","leftpadding");
-    centerPadding("center",15);
-    printf("%-15s\n","rightpadding");
-    char *substr = substring("samplestring",3,7);
-    printf("%s",substr);
+    
     return 0;
 }

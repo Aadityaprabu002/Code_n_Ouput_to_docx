@@ -1,42 +1,25 @@
 #include<stdio.h>
-#include<math.h>
-int octalToDecimal(int lo){
-    int rmd = lo%10;
-    int power = 0;
-    int decimal=0;
-
-    while(lo){
-        decimal+=rmd*(int)pow(8,power);
-        power++;
-        lo/=10;
-        rmd = lo%10;
+int main(){
+    int mat1[3][3]={
+        {1,2,3},
+        {4,5,6},
+        {7,8,9}
+    };
+    int mat2[3][3]={
+        {1,2,3},
+        {4,5,6},
+        {7,8,9}
+    };
+    int sum = 0;
+    for(int i=0;i<3;i++){
+        sum+=mat1[i][i];
+        sum+=mat1[i][3-1-i];
+        sum+=mat2[i][i];
+        sum+=mat2[i][3-1-i];
     }
-    return decimal;
-    
-}
+    sum-= mat1[3/2][3/2];
+    sum-= mat2[3/2][3/2];
 
-int hexaToDecimal(int lo){
-    int rmd = lo%10;
-    int power = 0;
-    int decimal=0;
- 
-    while(lo){
-        decimal+=rmd*(int)pow(16,power);
-        power++;
-        lo/=10;
-        rmd = lo%10;
-       
-    }
-    return decimal;
-    
-}
-int main() {
-   
-    int number;
-    printf("Enter a number:");
-    scanf("%d",&number);
-
-    printf("Octal to Decimal value:%d\n",octalToDecimal(number));
-    printf("Hexa to Decimal value:%d",hexaToDecimal(number));
-    return 0;
+    printf("Sum of two diags of two matrix is :%d",sum);
+  return 0;   
 }

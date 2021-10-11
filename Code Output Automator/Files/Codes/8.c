@@ -1,22 +1,28 @@
-#include<stdio.h>
-int main() {
-
-    char Z = '*'+'*'+ '*'%10 + '*'/10;
-    printf("%c\n",Z);
-    for(int i=0;i<10;i++)printf("*");
-    printf("\n");
-    for(int i=0;i<10;i++){
-        for(int j=0;j<10;j++){
-            if(i+j == 10-1){
-                printf("*");
-            }
-            else{
-                printf(" ");
-            }
+#include <stdio.h>
+#include <string.h>
+#include<ctype.h>
+int main()
+{
+    char s[1000];  
+    int i,vowels=0,consonants=0;
+ 
+    printf("Enter  the string : ");
+    gets(s);
+     
+    for(i=0;s[i];i++)  
+    {
+    	if(isalpha(s[i]))
+    	{
+		
+            if(s[i]=='a'|| s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'||s[i]=='A'||s[i]=='E'||s[i]=='I'||s[i]=='O' ||s[i]=='U')
+		      vowels++;
+            else
+             consonants++;
         }
-        printf("\n");
+ 
     }
-    for(int i=0;i<10;i++)printf("*");
-    printf("\n");
+    printf("vowels = %d\n",vowels);
+    printf("consonants = %d\n",consonants);
+    
     return 0;
 }
