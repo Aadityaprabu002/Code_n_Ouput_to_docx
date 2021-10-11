@@ -44,22 +44,7 @@ If your code ran successfully then your output be like this.....<br/>
 
 Output:<br/>
 
-python automator.py <br/>  
-Enter a name for your document:sample <br/>
-Enter a heading for your document:samplec <br/>
-Enter the extention for your codes:c <br/>
-Enter the extention for your images:png <br/>
-Enter a subheading:1 <br/>
-Enter a subheading:2 <br/>
-Enter a subheading:3 <br/>
-Enter a subheading:4 <br/>
-Enter a subheading:5 <br/>
-Enter a subheading:6 <br/>
-Enter a subheading:7 <br/>
-Enter a subheading:8 <br/>
-Enter a subheading:9 <br/>
-Enter a subheading:10 <br/>
-
+![](https://github.com/Aadityaprabu002/Code_n_Ouput_to_docx/blob/main/Automator/Instruction/Images/10.PNG)
 
 <br/><br/><br/>
 
