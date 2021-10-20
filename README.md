@@ -1,5 +1,9 @@
 # Code_n_Ouput_to_docx
 
+Update: I HAVE ADDED AN OPTION TO MAKE DOCUMENT WITHOUT CODES CHECK IT OUT !!! 
+
+
+
 You can use this to compile the code and output images into a word doc for assignment purposes <br/>
 Basic requirements: <br/> <br/> 
     Python 3.7 or 3.8 <br/>
